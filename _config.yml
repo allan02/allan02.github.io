@@ -1,6 +1,6 @@
 # Site settings
-title:          ㄴㄴㄴㄴㄴㄴㄴㄴㄴㄴㄴㄴㄴㄴ
-description:    "Rain is a simple and clean Jekyll theme with focus on content."
+title:          Jaehyeon
+description:    "Jaehyeon's Blog"
 url:            https://github.com/inelaah/rain
 
 # Author
@@ -34,7 +34,7 @@ related_posts_section:
 
 # Links to social media
 social:
-  email: inelaah@gmail.com
-  github: https://github.com/inelaah
+  email: allan3129@gmail.com
+  github: https://github.com/allan02
   twitter: https://twitter.com
-  linkedin: https://ba.linkedin.com/in/inela-avdic-hukic-322354131
+  linkedin: https://ba.linkedin.com
