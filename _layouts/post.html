@@ -1,8 +1,13 @@
 ---
 layout: default
+comments: true
 ---
 
 <div class="post">
+  
+  {% if page.comments != false %}
+	    {% include disqus_comments.html %}
+  {% endif %}  
 
   <div class="post-info">
     {% if page.date %}
