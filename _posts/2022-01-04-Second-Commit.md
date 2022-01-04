@@ -4,7 +4,7 @@ title: "Vagrant에 Mysql 설치하기"
 author: "Jaehyeon"
 ---
 
-<h3>오늘은 Vagrant에 Mysql를 설치해 보겠습니다.</h3><br>
+<br><h3>오늘은 Vagrant에 Mysql를 설치해 보겠습니다.</h3><br>
 
 
 <h4>Vagrant란?</h4>
@@ -34,8 +34,8 @@ Vagrant에는 Provider라는 개념이 있어서 VirtualBox, VMWare, Docker, Hyp
 <li>brew install virtualbox virtualbox-extension-pack vagrant</li><br>
 
   
-<li>mkdir -p ~/workspace/VM/centos7</li>
-(Vargant 관련 파일이 만들어질 작업 폴더를 구성합니다.)<br>
+<li>mkdir -p ~/workspace/VM/centos7<br>
+(Vargant 관련 파일이 만들어질 작업 폴더를 구성합니다.)</li><br>
 
   
 <li>cd /workspace/VM/centos7</li><br>
@@ -44,8 +44,8 @@ Vagrant에는 Provider라는 개념이 있어서 VirtualBox, VMWare, Docker, Hyp
 <li>vagrant plugin install vagrant-vbguest</li><br>
 
   
-<li>vagrant init</li>
-(초기파일을 생성합니다.)<br>
+<li>vagrant init<br>
+(초기파일을 생성합니다.)</li><br>
 
   
 <li>touch init.yml</li>
@@ -57,7 +57,7 @@ Vagrant에는 Provider라는 개념이 있어서 VirtualBox, VMWare, Docker, Hyp
 <br>그 후, vi 에디터를 통해 위 코드를 통해 생성된 Vagrantfile과 init.yml을 다음과 같이 수정해줍니다.
 
 
-<h4>Vagrantfile</h4>
+<br><h3>Vagrantfile</h3>
 
 
 ```
