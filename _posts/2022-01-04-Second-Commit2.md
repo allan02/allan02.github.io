@@ -153,6 +153,7 @@ end
 
 <img src="/assets/images/brew install ansible 실행해 줘야.png" width="90%" height="90%" title="제목" alt="아무거나"/>
 <img src="/assets/screenshot.png" width="90%" height="90%" title="제목" alt="아무거나"/>
+<img data-action="zoom" src='{{ "/assets/images/screenshot.png" | relative_url }}' alt='relative'>
 
 
 
