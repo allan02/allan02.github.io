@@ -151,10 +151,17 @@ end
 
 발생할 수 있는 오류는 다음과 같습니다.
 
-<img src="/assets/images/brew install ansible 실행해 줘야.png" width="90%" height="90%" title="제목" alt="아무거나"/>
-<img src="/assets/screenshot.png" width="90%" height="90%" title="제목" alt="아무거나"/>
-<img data-action="zoom" src='{{ "/assets/images/screenshot.png" | relative_url }}' alt='relative'>
+<img src="/assets/brew_install_ansible.png" width="90%" height="90%" title="제목" alt=""/> 
 
+-> ```brew install ansible``` 명령어를 통해 해결합니다.<br><br><br><br>
+
+<img src="/assets/ip_error.png" width="90%" height="90%" title="제목" alt=""/> 
+
+-> Vagrantfile에 설정된 IP 주소를 범위에 맞게 변경해 줍니다.<br><br><br><br>
+
+<img src="/assets/option_error.png" width="90%" height="90%" title="제목" alt=""/> 
+
+-> https://blog.aeei.io/2021/07/24/occured-issues-in-k8s/ 블로그의 ```[문제 1]```을 참고합니다.<br><br><br><br>
 
 
 
