@@ -4,7 +4,7 @@ title: "Vagrant에 Mysql 설치하기"
 author: "Jaehyeon"
 ---
 
-<br><h3>오늘은 Vagrant에 Mysql를 설치해 보겠습니다.</h3><br>
+<h3>오늘은 Vagrant에 Mysql를 설치해 보겠습니다.</h3><br>
 
 
 <h4>Vagrant란?</h4>
