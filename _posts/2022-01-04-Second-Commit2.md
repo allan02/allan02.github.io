@@ -1,10 +1,10 @@
 ---
 layout: post
-title: "Vagrant에 Mysql 설치하기"
+title: "Vagrant에 MySQL 설치하기"
 author: "Jaehyeon"
 ---
 
-<h3>오늘은 Vagrant에 Mysql를 설치해 보겠습니다.</h3>
+<h3>먼저 Vagrant를 사용하여 CentOS를 Provisioning 해보겠습니다.</h3>
 
 
 <h4>Vagrant란?</h4>
@@ -149,29 +149,59 @@ end
 
 그 후, `vagrant up` 명령어를 통해 가상 머신을 실행시킵니다.
 
-발생할 수 있는 오류는 다음과 같습니다.
+발생할 수 있는 오류와 해결 방법은 다음과 같습니다.
 
 <img src="/assets/brew_install_ansible.png" width="90%" height="90%" title="제목" alt=""/> 
 
--> ```brew install ansible``` 명령어를 통해 해결합니다.<br><br><br><br>
+-> ```brew install ansible``` 명령어를 통해 해결합니다.<br><br><br>
 
 <img src="/assets/ip_error.png" width="90%" height="90%" title="제목" alt=""/> 
 
--> Vagrantfile에 설정된 IP 주소를 범위에 맞게 변경해 줍니다.<br><br><br><br>
+-> ```Vagrantfile```에 설정된 IP 주소를 범위에 맞게 변경해 줍니다.<br><br><br>
 
 <img src="/assets/option_error.png" width="90%" height="90%" title="제목" alt=""/> 
 
--> https://blog.aeei.io/2021/07/24/occured-issues-in-k8s/ 블로그의 ```[문제 1]```을 참고합니다.<br><br><br><br>
+-> https://blog.aeei.io/2021/07/24/occured-issues-in-k8s/ 블로그의 ```[문제 1]```을 참고합니다.<br><br><br>
 
 
+<h3>Provisioning된 CentOS에 MySQL을 설치해 보겠습니다.</h3>
 
+<h4>다음 코드들을 순차적으로 CentOS 환경에서 입력해 주시면 됩니다.</h4>
 
+<ul>
+  
+<li>yum -y install http://dev.mysql.com/get/mysql57-community-release-el7-11.noarch.rpm<br>
+(MySQL 5.7을 설치합니다.)</li><br>
 
+  
+<li>yum -y install mysql-community-server</li><br>
 
+  
+<li>systemctl start mysqld</li><br>
 
+  
+<li>vi /var/log/mysqld.log<br>
+(MySQL을 실행하면 임시 비밀번호가 생성되고 mysqld.log 파일 안에서 임시 비밀번호를 확인 할 수 있습니다.)<br>
+<img src="/assets/first_password.png" width="90%" height="90%" title="제목" alt=""/>
+  </li><br>
 
+  
+<li>su root<br>
+  (```you need to be root to perform this command``` 에러 메시지를 방지 하기 위해 root로 이동합니다.)
+  </li>
+  
+  
+<li>ALTER USER 'root'@'localhost' IDENTIFIED BY '새 비밀번호';<br>
+  (비밀번호를 재설정 합니다.)
+  <img src="/assets/new_password.png" width="90%" height="90%" title="제목" alt=""/>
+  </li><br>
+  
+<li>FLUSH PRIVILEGES;</li><br>
 
-
-
-
-`시작이 반이다!`
+이후 사진들은 데이터베이스와 테이블이 이상없이 작동하는 과정입니다. 
+  
+<img src="/assets/new_database.png" width="90%" height="90%" title="제목" alt=""/> 
+<img src="/assets/new_table.png" width="90%" height="90%" title="제목" alt=""/> 
+<img src="/assets/final.png" width="90%" height="90%" title="제목" alt=""/> 
+  
+</ul>
