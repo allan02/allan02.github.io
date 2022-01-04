@@ -188,7 +188,7 @@ end
   
 <li>su root<br>
   (<strong>you need to be root to perform this command</strong> 에러 메시지를 방지 하기 위해 root로 이동합니다.)
-  </li>
+  </li><br>
   
   
 <li>ALTER USER 'root'@'localhost' IDENTIFIED BY '새 비밀번호';<br>
@@ -200,7 +200,7 @@ end
 
 </ul>
 
-지금까지 잘 따라오셨다면, 가상머신에서 데이터베이스가 이상 없이 작동합니다. 
+지금까지 잘 따라오셨다면, 가상머신에서 데이터베이스가 이상 없이 잘 작동합니다. 
   
 <img src="/assets/new_database.png" width="90%" height="150px" title="제목" alt=""/> 
 <img src="/assets/new_table.png" width="90%" height="90%" title="제목" alt=""/> 
