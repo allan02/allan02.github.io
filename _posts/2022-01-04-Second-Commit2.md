@@ -16,7 +16,7 @@ Vagrant는 포터블 가상화 소프트웨어 개발 환경의 생성 및 유�
 Vagrant는 독립적으로 사용되는 도구가 아니며, 가상 머신을 생성하거나 조작하는 기능을 직접 제공하지는 않습니다. 
 
 
-Vagrant에는 Provider라는 개념이 있어서 VirtualBox, VMWare, Docker, Hyper-V와 같은 도구들을 가상 머신을 관리하는 도구로 조합해서 사용할 수 있습니다.<br>
+Vagrant에는 Provider라는 개념이 있어서 VirtualBox, VMWare, Docker, Hyper-V와 같은 도구들을 가상 머신을 관리하는 도구로 조합해서 사용할 수 있습니다.
 
 
 <h4>Vagrant를 사용하기 위해 다음 코드들을 순차적으로 Mac 터미널에서 입력해 주시면 됩니다.</h4>
@@ -54,10 +54,10 @@ Vagrant에는 Provider라는 개념이 있어서 VirtualBox, VMWare, Docker, Hyp
 </ul>
 
 
-<br>그 후, vi 에디터를 통해 위 코드를 통해 생성된 Vagrantfile과 init.yml을 다음과 같이 수정해줍니다.
+그 후, vi 에디터를 통해 위 코드를 통해 생성된 Vagrantfile과 init.yml을 다음과 같이 수정해줍니다.
 
 
-<br><h3>Vagrantfile</h3>
+<h4>Vagrantfile</h4>
 
 
 ```
@@ -147,7 +147,7 @@ end
         name: sshd.service
 ```
 
-<br>그 후, `vagrant up` 명령어를 통해 가상 머신을 실행시킵니다.
+그 후, `vagrant up` 명령어를 통해 가상 머신을 실행시킵니다.
 
 
 
