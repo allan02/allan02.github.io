@@ -4,7 +4,7 @@ title: "Vagrant에 Mysql 설치하기"
 author: "Jaehyeon"
 ---
 
-<h3>오늘은 Vagrant에 Mysql를 설치해 보겠습니다.</h3><br>
+<h3>오늘은 Vagrant에 Mysql를 설치해 보겠습니다.</h3>
 
 
 <h4>Vagrant란?</h4>
@@ -16,10 +16,10 @@ Vagrant는 포터블 가상화 소프트웨어 개발 환경의 생성 및 유�
 Vagrant는 독립적으로 사용되는 도구가 아니며, 가상 머신을 생성하거나 조작하는 기능을 직접 제공하지는 않습니다. 
 
 
-Vagrant에는 Provider라는 개념이 있어서 VirtualBox, VMWare, Docker, Hyper-V와 같은 도구들을 가상 머신을 관리하는 도구로 조합해서 사용할 수 있습니다.
+Vagrant에는 Provider라는 개념이 있어서 VirtualBox, VMWare, Docker, Hyper-V와 같은 도구들을 가상 머신을 관리하는 도구로 조합해서 사용할 수 있습니다.<br>
 
 
-<br><h4>Vagrant를 사용하기 위해 다음 코드들을 순차적으로 Mac 터미널에서 입력해 주시면 됩니다.</h4>
+<h4>Vagrant를 사용하기 위해 다음 코드들을 순차적으로 Mac 터미널에서 입력해 주시면 됩니다.</h4>
 
 
 <ul>
