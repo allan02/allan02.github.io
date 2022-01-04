@@ -152,7 +152,7 @@ end
 발생할 수 있는 오류는 다음과 같습니다.
 
 <img src="/assets/images/brew install ansible 실행해 줘야.png" width="90%" height="90%" title="제목" alt="아무거나"/>
-
+<img src="/assets/screenshot.png" width="90%" height="90%" title="제목" alt="아무거나"/>
 
 
 
