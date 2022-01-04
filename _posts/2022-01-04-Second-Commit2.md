@@ -147,7 +147,7 @@ end
         name: sshd.service
 ```
 
-그 후, `vagrant up` 명령어를 통해 가상 머신을 실행시킵니다.
+그 후, `vagrant up` 명령어를 통해 가상 머신을 실행시킵니다.<br>
 
 발생할 수 있는 오류와 해결 방법은 다음과 같습니다.
 
@@ -187,7 +187,7 @@ end
 
   
 <li>su root<br>
-  (```you need to be root to perform this command``` 에러 메시지를 방지 하기 위해 root로 이동합니다.)
+  (<strong>you need to be root to perform this command</strong> 에러 메시지를 방지 하기 위해 root로 이동합니다.)
   </li>
   
   
