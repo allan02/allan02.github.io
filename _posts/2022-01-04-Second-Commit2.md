@@ -207,6 +207,25 @@ end
   
 <img src="/assets/new_database.png" width="90%" height="150px" title="제목" alt=""/> 
 <img src="/assets/new_table.png" width="90%" height="90%" title="제목" alt=""/> 
-<img src="/assets/final.png" width="90%" height="90%" title="제목" alt=""/> 
+<img src="/assets/final.png" width="90%" height="90%" title="제목" alt=""/><br>
   
+<h3>Vagrant 가상 이미지 실행 및 SSH 접근</h3>
 
+다음 코드들을 참고하시면 됩니다.
+
+<ul>
+
+<li>ssh-keygen<br>
+  (SSH 접근을 위해 SSH 공개키를 먼저 만들어 줍니다.)</li><br>
+
+  
+<li>이렇게 만들어진 공개키를 접속하려는 서버에 등록하면 됩니다.</li><br>
+  
+<li>vagrant ssh<br>
+  (vagrant 명령어를 통해 SSH로 접근합니다.)
+  </li><br>
+  
+<li>cat ~/.ssh/authorized_keys<br>
+  (인증키가 제대로 등록 되었는지 확인하는 코드입니다.)</li><br>
+
+  
