@@ -200,7 +200,7 @@ end
 
 </ul>
 
-지금까지 잘 따라오셨다면, 가상머신에서 데이터베이스가 이상 없이 잘 작동합니다. 
+지금까지 잘 따라오셨다면, 가상머신에서 MySQL이 이상 없이 잘 작동합니다. 
   
 <img src="/assets/new_database.png" width="90%" height="150px" title="제목" alt=""/> 
 <img src="/assets/new_table.png" width="90%" height="90%" title="제목" alt=""/> 
