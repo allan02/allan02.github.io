@@ -232,7 +232,7 @@ end
 
 Vagrant 가상 이미지 실행 및 SSH 접근이 올바르게 수행된 모습입니다.
 
-<img src="/assets/ssh_final.png" width="90%" height="150px" title="제목" alt=""/>
+<img src="/assets/ssh_final.png" width="90%" height="150px" title="제목" alt=""/><br>
 
 
 
