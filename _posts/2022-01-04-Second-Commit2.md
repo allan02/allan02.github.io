@@ -184,8 +184,8 @@ end
 <li>yum -y install mysql-community-server</li><br>
 
   
-<li>systemctl start mysqld</li><br>
-(MySQL을 실행합니다.)
+<li>systemctl start mysqld<br>
+(MySQL을 실행합니다.)</li><br>
 
   
 <li>vi /var/log/mysqld.log<br>
