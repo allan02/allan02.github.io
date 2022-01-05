@@ -25,27 +25,36 @@ Vagrant에는 Provider라는 개념이 있어서 VirtualBox, VMWare, Docker, Hyp
 <ul>
 
   
-<li>/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"</li><br>
+<li>/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"<br>
+  (brew를 설치합니다.)
+  </li><br>
 
   
-<li>brew install --cask visual-studio-code</li><br>
+<li>brew install --cask visual-studio-code<br>
+  (visual studio code를 설치합니다.)</li><br>
 
   
-<li>brew install virtualbox virtualbox-extension-pack vagrant</li><br>
+<li>brew install virtualbox virtualbox-extension-pack vagrant<br>
+  (vagrant 사용을 위해 virtualbox를 설치합니다.)
+  </li><br>
 
   
 <li>mkdir -p ~/workspace/VM/centos7<br>
 (Vargant 관련 파일이 만들어질 작업 폴더를 구성합니다.)</li><br>
 
   
-<li>cd /workspace/VM/centos7</li><br>
+<li>cd /workspace/VM/centos7<br>
+  (해당 워크스페이스로 이동합니다.)
+  </li><br>
 
   
-<li>vagrant plugin install vagrant-vbguest</li><br>
+<li>vagrant plugin install vagrant-vbguest<br>
+  (vagrant를 통해 provisioning하는 가상머신의 모든 기능을 사용하기 위해 plugin을 설치합니다.)
+  </li><br>
 
   
 <li>vagrant init<br>
-(초기파일을 생성합니다.)</li><br>
+(vagrant 초기파일을 생성합니다.)</li><br>
 
   
 <li>touch init.yml</li>
