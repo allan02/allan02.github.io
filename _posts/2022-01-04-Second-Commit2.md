@@ -114,8 +114,6 @@ end
         generate_ssh_key: true
         password_lock: yes
       with_items:
-        - irteam
-        - irteamsu
         - centos
     - name: sudoers.d 추가
       copy:
@@ -127,8 +125,6 @@ end
         mode: 0440
         validate: "/usr/sbin/visudo -c -f '%s'"
       with_items:
-        - irteam
-        - irteamsu
         - centos
     - name: ssh 내용 추가
       authorized_key:
@@ -136,8 +132,6 @@ end
         state: present
         key: "{{ lookup('file', '~/.ssh/id_rsa.pub') }}"
       with_items:
-        - irteam
-        - irteamsu
         - centos
         - vagrant
         - root
@@ -170,6 +164,10 @@ end
 
 <ul>
   
+<li>su root<br>
+  (<strong>you need to be root to perform this command</strong> 에러 메시지를 방지 하기 위해 root로 이동합니다.)
+  </li><br>
+  
 <li>yum -y install http://dev.mysql.com/get/mysql57-community-release-el7-11.noarch.rpm<br>
 (MySQL 5.7을 설치합니다.)</li><br>
 
@@ -178,16 +176,12 @@ end
 
   
 <li>systemctl start mysqld</li><br>
+(MySQL을 실행합니다.)
 
   
 <li>vi /var/log/mysqld.log<br>
 (MySQL을 실행하면 임시 비밀번호가 생성되고 mysqld.log 파일 안에서 임시 비밀번호를 확인 할 수 있습니다.)<br>
 <img src="/assets/first_password.png" width="90%" height="90%" title="제목" alt=""/>
-  </li><br>
-
-  
-<li>su root<br>
-  (<strong>you need to be root to perform this command</strong> 에러 메시지를 방지 하기 위해 root로 이동합니다.)
   </li><br>
   
   
