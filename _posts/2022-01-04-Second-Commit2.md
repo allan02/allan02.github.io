@@ -222,7 +222,7 @@ end
 <li>이렇게 만들어진 공개키 접속하려는 서버에 등록하면 됩니다.</li><br>
   
 <li>vagrant ssh<br>
-  (vagrant 명령어를 통해 SSH로 접근합니다.)
+  (vagrant 명령어를 통해 SSH로 접근합니다. vagrant up 명령어가 선행 되어야 합니다.)
   </li><br>
   
 <li>cat ~/.ssh/authorized_keys<br>
