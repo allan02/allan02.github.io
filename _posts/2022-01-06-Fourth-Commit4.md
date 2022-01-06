@@ -55,7 +55,7 @@ author: "Jaehyeon"
 여기까지 잘 따라오셨다면, MySQL이 이상 없이 동작합니다. 다음 사진들은 User를 할당해 준 코드입니다.
 <img src="/assets/second/test_mysql.png" width="90%" height="90%" title="제목" alt=""/><br>
 <img src="/assets/second/create_test.png" width="90%" height="90%" title="제목" alt=""/><br>
-<img src="/assets/second/user_pr.png" width="90%" height="90%" title="제목" alt=""/>
+
 <br>-> User를 할당해 준 코드입니다.<br>
 <img src="/assets/second/final.png" width="90%" height="90%" title="제목" alt=""/><br>
 
