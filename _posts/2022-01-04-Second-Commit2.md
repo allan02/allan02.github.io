@@ -25,10 +25,9 @@ Vagrant는 독립적으로 사용되는 도구가 아니며, 가상 머신을 �
 
 Vagrant에는 Provider라는 개념이 있어서 VirtualBox, VMWare, Docker, Hyper-V와 같은 도구들을 가상 머신을 관리하는 도구로 조합해서 사용할 수 있습니다.
 
+<h3>How? 제 코드를 따라오시면 됩니다.</h3>
 
 <h4>Vagrant를 사용하기 위해 다음 코드들을 순차적으로 Mac 터미널에서 입력해 주시면 됩니다.</h4>
-
-<h3>How? 제 코드를 따라오시면 됩니다.</h3>
 
 <ul>
 
